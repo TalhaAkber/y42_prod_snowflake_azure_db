@@ -1,6 +1,6 @@
 {
   "request_id": "220511163455_98bc4c8c-7fd0-5795-9355-1b96d5790029",
-  "status": "pending",
+  "status": "ready",
   "details": {
     "invalid_rows": 0,
     "export_finished_at": "2022-05-11T17:39:18.551801+00:00",
@@ -15,7 +15,96 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "01a43303-3201-21f2-0000-e9a100115aea",
-    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/25d74ec4-b683-4f14-8201-86e12f000c89"
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/25d74ec4-b683-4f14-8201-86e12f000c89",
+    "import_finished_at": "2022-05-11T17:39:37.422440+00:00",
+    "row_count": 1000000,
+    "current_import_row_count": 1000000,
+    "size_in_bytes": 32620032,
+    "columns": [
+      {
+        "field_name": "UNITS_SOLD",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "TOTAL_REVENUE",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "ORDER_ID",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "SHIP_DATE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "UNIT_COST",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "UNIT_PRICE",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "ID",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "TOTAL_PROFIT",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "TYPE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TOTAL_COST",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "COUNTRY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ORDER_PRIORITY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "REGION",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ITEM",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SALES_CHANNEL",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ORDER_DATE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220511163455_98bc4c8c-7fd0-5795-9355-1b96d5790029",
+    "external_url": "https://gr00444.eu-central-1.snowflakecomputing.com/console#/data/tables/detail?databaseName=PROD_SNOWFLAKE_DB&schemaName=PROD_SNOWFLAKE_SCHEMA&tableName=220511163455_98bc4c8c-7fd0-5795-9355-1b96d5790029"
   },
-  "_signature": "vRVLHJVyCzk+eOBemnWLQpGoS5S43B8kT9a0HU/IVmo/Yfpc/NpPckRk4en0HPokjE74Fw6wby6X59JOyvjuAw=="
+  "finished_at": "2022-05-11T17:39:37.422586+00:00",
+  "_signature": "gsMl9ZhU8zsdN0tzzbRmwi0NBbw9XsownMlKUpveZdvVDqwQJD7QhS/ZEu83LUVGsKSmFLNp07RIuchoJ5KDCA=="
 }
