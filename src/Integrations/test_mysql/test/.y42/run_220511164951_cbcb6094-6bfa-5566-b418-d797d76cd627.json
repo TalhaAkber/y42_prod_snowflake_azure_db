@@ -1,0 +1,21 @@
+{
+  "request_id": "220511164951_cbcb6094-6bfa-5566-b418-d797d76cd627",
+  "status": "pending",
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-05-11T18:15:10.646919+00:00",
+    "external_state": {
+      "bookmarks": {
+        "tmp_test_data-test": {
+          "initial_full_table_complete": true
+        }
+      },
+      "currently_syncing": null,
+      "schema_hash": "4b2b3053c386fb8efd5a1016916fe770"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "01a43327-3201-21f2-0000-e9a100115b4a",
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/9ff98279-af0c-490e-a31e-50e2ee85c296"
+  },
+  "_signature": "VjQW/TMt20dJ6Hqng4Dj5NQq2JPmYAymxZhSfWrxjtCOayiuoaKKWHyf23TdcaXl6KhVAqb17z4CyE8mzzRTCg=="
+}
