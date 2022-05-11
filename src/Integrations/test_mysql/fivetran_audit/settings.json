@@ -1,0 +1,20 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/table",
+  "columns": [
+    "id",
+    "message",
+    "update_started",
+    "update_id",
+    "schema",
+    "table",
+    "start",
+    "done",
+    "rows_updated_or_inserted",
+    "status",
+    "progress",
+    "_fivetran_synced",
+    "sdc_deleted_at",
+    "sdc_extracted_at"
+  ],
+  "import": "tmp_test_data-fivetran_audit"
+}
