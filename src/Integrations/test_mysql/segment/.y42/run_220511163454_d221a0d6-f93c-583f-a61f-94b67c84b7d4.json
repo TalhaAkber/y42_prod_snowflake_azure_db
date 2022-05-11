@@ -1,6 +1,6 @@
 {
   "request_id": "220511163454_d221a0d6-f93c-583f-a61f-94b67c84b7d4",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "a28f57e7-b3c6-4ac9-909f-bd50d86772a4",
     "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
@@ -62,7 +62,71 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "01a432c3-3201-21f2-0000-e9a100115aaa",
-    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/b33f97d4-5d66-4e1d-a724-73074cd11bb2"
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/b33f97d4-5d66-4e1d-a724-73074cd11bb2",
+    "import_finished_at": "2022-05-11T16:35:19.694986+00:00",
+    "row_count": 342,
+    "current_import_row_count": 342,
+    "size_in_bytes": 11264,
+    "columns": [
+      {
+        "field_name": "TYPE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CREATED_AT",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "LIST_ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SDC_DELETED_AT",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "SDC_EXTRACTED_AT",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "MEMBER_COUNT",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "FIVETRAN_SYNCED",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "UPDATED_AT",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "NAME",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "FIVETRAN_DELETED",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      }
+    ],
+    "table_name": "220511163454_d221a0d6-f93c-583f-a61f-94b67c84b7d4",
+    "external_url": "https://gr00444.eu-central-1.snowflakecomputing.com/console#/data/tables/detail?databaseName=PROD_SNOWFLAKE_DB&schemaName=PROD_SNOWFLAKE_SCHEMA&tableName=220511163454_d221a0d6-f93c-583f-a61f-94b67c84b7d4"
   },
-  "_signature": "DtdgXcvED7PJJhdR+jgRPIUQPCwuqkVtqTSqb1wS79jDhMDcbeuUJy22t/HO76SfQUGwS8pDRx1lzKDt+LxRCg=="
+  "finished_at": "2022-05-11T16:35:19.695117+00:00",
+  "_signature": "JGv8F4m73Ki9ETgV6eTPY/MZorI8HVxkVPe0RI+km21OQTaoXX60URufyCOnjcOsO0jqEywCAsF4BqrNe6ZKBQ=="
 }
