@@ -1,0 +1,45 @@
+{
+  "request_id": "220511163455_c1cb947e-4c61-5769-900d-1dc8ada8fe1a",
+  "status": "pending",
+  "request": {
+    "source_credentials": "a28f57e7-b3c6-4ac9-909f-bd50d86772a4",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/source.json"
+    },
+    "table_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/table",
+      "columns": [
+        "id",
+        "en",
+        "de",
+        "fr"
+      ],
+      "import": "tmp_test_data-testt"
+    },
+    "created_at": "2022-05-11T16:34:55.019662+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/test_mysql/testt",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "c39f1ac29d8184fb8892847bbaa04666df32be0c"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "10",
+      "trial": true
+    }
+  },
+  "created_at": "2022-05-11T16:34:55.019662+00:00",
+  "_signature": "oy3LG9nBTgrqYNa2XMK37qIHAHMPWJNksYzh2QNHfeMkmuk+aMwLV4H/6i/JBlg2YNYSqU+hok0Hu8BnRT9GDw=="
+}
