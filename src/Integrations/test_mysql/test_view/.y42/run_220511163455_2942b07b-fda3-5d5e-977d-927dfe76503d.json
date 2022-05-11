@@ -1,6 +1,6 @@
 {
   "request_id": "220511163455_2942b07b-fda3-5d5e-977d-927dfe76503d",
-  "status": "pending",
+  "status": "ready",
   "details": {
     "invalid_rows": 0,
     "export_finished_at": "2022-05-11T17:24:55.442792+00:00",
@@ -15,7 +15,31 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "01a432f4-3201-2131-0000-e9a10011719e",
-    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/7665de04-62b0-4e84-a815-80644ca3a6fd"
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/7665de04-62b0-4e84-a815-80644ca3a6fd",
+    "import_finished_at": "2022-05-11T17:25:02.781223+00:00",
+    "row_count": 1000000,
+    "current_import_row_count": 1000000,
+    "size_in_bytes": 2757120,
+    "columns": [
+      {
+        "field_name": "ORDER_DATE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ORDER_PRIORITY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "COUNTRY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220511163455_2942b07b-fda3-5d5e-977d-927dfe76503d",
+    "external_url": "https://gr00444.eu-central-1.snowflakecomputing.com/console#/data/tables/detail?databaseName=PROD_SNOWFLAKE_DB&schemaName=PROD_SNOWFLAKE_SCHEMA&tableName=220511163455_2942b07b-fda3-5d5e-977d-927dfe76503d"
   },
-  "_signature": "G2VFKKhKIPn+ScNwTmpxuvJlQvxorh6w3SjATtSsj1u4wRtrMz0bDP/vPoPse+F3OZysOgAUsYDL6hMvCQulAA=="
+  "finished_at": "2022-05-11T17:25:02.781331+00:00",
+  "_signature": "5VNImzKqlK8G5JpN7ZFo0WuOQN1oU9Fj+KygPX1oFjmbCmyJJrKScQrWBex8NH9MR2gfssKwTUZbuPdG2vmIDQ=="
 }
