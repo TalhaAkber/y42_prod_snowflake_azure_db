@@ -1,0 +1,23 @@
+{
+  "request_id": "220511163456_5c2063ca-cd1d-56a1-9d79-20e608aff0a8",
+  "status": "pending",
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-05-11T17:24:38.429562+00:00",
+    "external_state": {
+      "bookmarks": {
+        "tmp_test_data-test_pk": {
+          "replication_key": "id",
+          "replication_key_value": 1000000,
+          "version": 1652286906247
+        }
+      },
+      "currently_syncing": null,
+      "schema_hash": "a1d767f854edbe8c49597b94703699e0"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "01a432f4-3201-2130-0000-e9a1001165de",
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/c968f484-4960-40a9-b236-6f3bb082754b"
+  },
+  "_signature": "xsj4iBf9svb0+HrjzW7XDG1brYFEASpuLRLB6uhaCHu95XV4qj9q5nMLOCfIes+hYDsfKc0KvlwMBbg2B+dtCQ=="
+}
