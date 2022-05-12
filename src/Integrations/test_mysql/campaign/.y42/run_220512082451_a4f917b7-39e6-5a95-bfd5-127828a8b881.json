@@ -1,0 +1,83 @@
+{
+  "request_id": "220512082451_a4f917b7-39e6-5a95-bfd5-127828a8b881",
+  "status": "pending",
+  "request": {
+    "source_credentials": "a28f57e7-b3c6-4ac9-909f-bd50d86772a4",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/source.json"
+    },
+    "table_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/table",
+      "columns": [
+        "id",
+        "type",
+        "create_time",
+        "archive_url",
+        "long_archive_url",
+        "status",
+        "send_time",
+        "content_type",
+        "list_id",
+        "segment_text",
+        "segment_id",
+        "title",
+        "to_name",
+        "authenticate",
+        "timewarp",
+        "subject_line",
+        "from_name",
+        "reply_to",
+        "use_conversation",
+        "folder_id",
+        "auto_footer",
+        "inline_css",
+        "auto_tweet",
+        "fb_comments",
+        "template_id",
+        "drag_and_drop",
+        "clicktale",
+        "track_html_clicks",
+        "track_text_clicks",
+        "track_goals",
+        "track_opens",
+        "track_ecomm_360",
+        "google_analytics",
+        "_fivetran_deleted",
+        "winning_combination_id",
+        "winning_campaign_id",
+        "winner_criteria",
+        "wait_time",
+        "test_size",
+        "_fivetran_synced",
+        "sdc_deleted_at",
+        "sdc_extracted_at"
+      ],
+      "import": "tmp_test_data-campaign"
+    },
+    "created_at": "2022-05-12T08:24:51.414483+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/test_mysql/campaign",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "9da7a5cce9b75f5a4e4c40f96ceb0326229fb50f"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "10",
+      "trial": true
+    }
+  },
+  "created_at": "2022-05-12T08:24:51.414483+00:00",
+  "_signature": "eC1SKo1vFNl4wPRc05Dgxprxvw5jnt5nb3DPpOPqAoiHtC7H5KPwEaPF30BbhjTU/kd+e1wiyR9dvO8dgNx/Ag=="
+}
