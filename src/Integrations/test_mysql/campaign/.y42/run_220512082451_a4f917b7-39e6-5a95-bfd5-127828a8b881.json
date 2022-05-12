@@ -79,5 +79,21 @@
     }
   },
   "created_at": "2022-05-12T08:24:51.414483+00:00",
-  "_signature": "eC1SKo1vFNl4wPRc05Dgxprxvw5jnt5nb3DPpOPqAoiHtC7H5KPwEaPF30BbhjTU/kd+e1wiyR9dvO8dgNx/Ag=="
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-05-12T08:25:15.628096+00:00",
+    "external_state": {
+      "bookmarks": {
+        "tmp_test_data-campaign": {
+          "initial_full_table_complete": true
+        }
+      },
+      "currently_syncing": null,
+      "schema_hash": "a2f2ed658a7e27c1da0d8c8d076e7507"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "01a43679-3201-22b2-0000-e9a1001190f6",
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/d1952872-9c9a-4876-81b6-2ca260de8772"
+  },
+  "_signature": "Z2uLB+oCgzMTA4hSxYeOH1LjevoRFnO9kf0xMof7G4ZTAPB0HfwG/7zflmYFaj369AVLawYkZ5uq70DHLIOdDQ=="
 }
