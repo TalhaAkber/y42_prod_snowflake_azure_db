@@ -1,3 +1,4 @@
 {
-  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/postmark/0.0.0/source.json"
+  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/postmark/0.0.0/source.json",
+  "start_date": "2021-05-12T14:38:12Z"
 }
