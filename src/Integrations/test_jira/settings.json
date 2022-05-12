@@ -1,3 +1,4 @@
 {
-  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/jira/0.0.0/source.json"
+  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/jira/0.0.0/source.json",
+  "start_date": "2021-05-12T13:28:46Z"
 }
