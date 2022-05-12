@@ -1,0 +1,62 @@
+{
+  "request_id": "220512123903_c7188b75-1d4c-5b52-aa21-133352324164",
+  "status": "pending",
+  "request": {
+    "source_credentials": "fbb48043-2fe4-4588-94eb-60df35260295",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/postmark/0.0.0/source.json",
+      "start_date": "2021-05-12T14:38:12Z"
+    },
+    "table_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/postmark/0.0.0/table",
+      "columns": [
+        "Tag",
+        "MessageID",
+        "MessageStream",
+        "To",
+        "Cc",
+        "Bcc",
+        "Recipients",
+        "ReceivedAt",
+        "From",
+        "Subject",
+        "Attachments",
+        "Status",
+        "TrackOpens",
+        "TrackLinks",
+        "Metadata",
+        "Sandboxed"
+      ],
+      "import": "outbound_messages",
+      "_datos_write_settings": {
+        "max_flatten_depth": 0,
+        "decimals": false
+      }
+    },
+    "created_at": "2022-05-12T12:39:03.103243+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/postmark/outbound_messages",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "edfbb9f412309a4cdb3c354d934bedb1cc3360b6"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "18",
+      "trial": true
+    }
+  },
+  "created_at": "2022-05-12T12:39:03.103243+00:00",
+  "_signature": "+gKVhtJd8Vg/cO/BtP3OEaCXKTBeTfWFEseVW+ccOnKWYpVGYrw3COYu6FKCQFy4YEPpwy24o7M09N5RlN6vAQ=="
+}
