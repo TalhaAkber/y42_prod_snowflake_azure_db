@@ -1,6 +1,6 @@
 {
   "request_id": "220512122934_78ce6cfe-f999-51f5-8d2a-4723b28406a5",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "a28f57e7-b3c6-4ac9-909f-bd50d86772a4",
     "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
@@ -79,7 +79,156 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "01a4376d-3201-22b2-0000-e9a100119126",
-    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/41abc1fa-362c-412c-b505-383e06d5a6a4"
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/41abc1fa-362c-412c-b505-383e06d5a6a4",
+    "import_finished_at": "2022-05-12T12:29:59.163285+00:00",
+    "row_count": 1,
+    "current_import_row_count": 1,
+    "size_in_bytes": 8192,
+    "columns": [
+      {
+        "field_name": "CONTACT_ADDRESS_1",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CONTACT_COUNTRY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CONTACT_ADDRESS_2",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "NOTIFY_ON_UNSUBSCRIBE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "DATE_CREATED",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "FIVETRAN_DELETED",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "NOTIFY_ON_SUBSCRIBE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "USE_ARCHIVE_BAR",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "SUBSCRIBE_URL_LONG",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "BEAMER_ADDRESS",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CONTACT_STATE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CONTACT_ZIP",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "DEFAULT_LANGUAGE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CONTACT_CITY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "DEFAULT_FROM_EMAIL",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "EMAIL_TYPE_OPTION",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "SDC_DELETED_AT",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "PERMISSION_REMINDER",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SDC_EXTRACTED_AT",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "DEFAULT_FROM_NAME",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "VISIBILITY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SUBSCRIBE_URL_SHORT",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "NAME",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CONTACT_COMPANY",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "DEFAULT_SUBJECT",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "LIST_RATING",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "FIVETRAN_SYNCED",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      }
+    ],
+    "table_name": "220512122934_78ce6cfe-f999-51f5-8d2a-4723b28406a5",
+    "external_url": "https://gr00444.eu-central-1.snowflakecomputing.com/console#/data/tables/detail?databaseName=PROD_SNOWFLAKE_DB&schemaName=PROD_SNOWFLAKE_SCHEMA&tableName=220512122934_78ce6cfe-f999-51f5-8d2a-4723b28406a5"
   },
-  "_signature": "YyQZ3S29DaDslgECyGEdihUEZZXJ0U+Nb1oU/7UMuskhQGuqnumNZ733L1/vxhxYTn0CEXmnF3eitqCjXxkHBw=="
+  "finished_at": "2022-05-12T12:29:59.163415+00:00",
+  "_signature": "BDYswvm+nc4ZE/5fRhg3zF4AEL1kQNgxAp3W6lZp/XUZx0Yir+cp4CxzQAwhkfIbUj443L5DEdQzGAjhVP1dBA=="
 }
