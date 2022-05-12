@@ -1,0 +1,4030 @@
+{
+  "streams": [
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_opens_platforms",
+      "group": null,
+      "name": "stats_outbound_opens_platforms",
+      "stream": "stats_outbound_opens_platforms",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Desktop": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "WebMail": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Mobile": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Unknown": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/opens/platforms",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Desktop"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "WebMail"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Mobile"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Unknown"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Name"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "delivery_stats",
+      "group": null,
+      "name": "delivery_stats",
+      "stream": "delivery_stats",
+      "schema": {
+        "properties": {
+          "Type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Count": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Name"
+            ],
+            "path": "deliverystats",
+            "stream-type": "unpaginated_list",
+            "response-key": "Bounces"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Type"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Count"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound",
+      "group": null,
+      "name": "stats_outbound",
+      "stream": "stats_outbound",
+      "schema": {
+        "properties": {
+          "Sent": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Bounced": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "SMTPApiErrors": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "BounceRate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "SpamComplaints": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "SpamComplaintsRate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "Tracked": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Opens": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "UniqueOpens": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "TotalClicks": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "UniqueLinksClicked": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "WithClientRecorded": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "WithPlatformRecorded": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "WithReadTimeRecorded": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "WithLinkTracking": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "WithOpenTracking": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "TotalTrackedLinksSent": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [],
+            "path": "stats/outbound",
+            "stream-type": "aggregate"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Sent"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Bounced"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SMTPApiErrors"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BounceRate"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SpamComplaints"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SpamComplaintsRate"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tracked"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Opens"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "UniqueOpens"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TotalClicks"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "UniqueLinksClicked"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "WithClientRecorded"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "WithPlatformRecorded"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "WithReadTimeRecorded"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "WithLinkTracking"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "WithOpenTracking"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TotalTrackedLinksSent"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "MessageID"
+      ],
+      "replication_key": "Date",
+      "tap_stream_id": "inbound_message_details",
+      "group": null,
+      "name": "inbound_message_details",
+      "stream": "inbound_message_details",
+      "schema": {
+        "properties": {
+          "From": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "FromName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "FromFull": {
+            "properties": {
+              "Email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "MailboxHash": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "To": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ToFull": {
+            "items": {
+              "properties": {
+                "Email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "MailboxHash": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "CcFull": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Cc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BccFull": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Bcc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ReplyTo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "OriginalRecipient": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MailboxHash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TextBody": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "HtmlBody": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "StrippedTextReply": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Tag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Headers": {
+            "items": {
+              "properties": {
+                "Name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Value": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Attachments": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "MessageID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BlockedReason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageStream": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "MessageID"
+            ],
+            "path": "messages/inbound/{}/details",
+            "stream-type": "child",
+            "parent-endpoint": "messages/inbound",
+            "parent-response-key": "InboundMessages"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "From"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FromName"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FromFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "MailboxHash"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "To"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ToFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "MailboxHash"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CcFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Cc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BccFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Bcc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReplyTo"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "OriginalRecipient"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MailboxHash"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TextBody"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "HtmlBody"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "StrippedTextReply"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tag"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Headers"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Value"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Attachments"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BlockedReason"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Status"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStream"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_clicks_platforms",
+      "group": null,
+      "name": "stats_outbound_clicks_platforms",
+      "stream": "stats_outbound_clicks_platforms",
+      "schema": {
+        "properties": {
+          "Date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Desktop": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Mobile": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Unknown": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/clicks/platforms",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Desktop"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Mobile"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Unknown"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "ID"
+      ],
+      "replication_key": "BouncedAt",
+      "tap_stream_id": "bounces",
+      "group": null,
+      "name": "bounces",
+      "stream": "bounces",
+      "schema": {
+        "properties": {
+          "ID": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TypeCode": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Tag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ServerID": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "MessageStream": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Details": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Email": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "From": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BouncedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "DumpAvailable": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "Inactive": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "CanActivate": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "ID"
+            ],
+            "path": "bounces",
+            "stream-type": "incremental_list",
+            "response-key": "Bounces"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Type"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TypeCode"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tag"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageID"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ServerID"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStream"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Description"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Details"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "From"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BouncedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "DumpAvailable"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Inactive"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CanActivate"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_sends",
+      "group": null,
+      "name": "stats_outbound_sends",
+      "stream": "stats_outbound_sends",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Sent": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/sends",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Sent"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_spam",
+      "group": null,
+      "name": "stats_outbound_spam",
+      "stream": "stats_outbound_spam",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "SpamComplaint": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/spam",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SpamComplaint"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_tracked",
+      "group": null,
+      "name": "stats_outbound_tracked",
+      "stream": "stats_outbound_tracked",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Tracked": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": true,
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/tracked",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tracked"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_clicks_location",
+      "group": null,
+      "name": "stats_outbound_clicks_location",
+      "stream": "stats_outbound_clicks_location",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "HTML": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Text": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/clicks/location",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "HTML"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Text"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "MessageID"
+      ],
+      "replication_key": "ReceivedAt",
+      "tap_stream_id": "outbound_message_details",
+      "group": null,
+      "name": "outbound_message_details",
+      "stream": "outbound_message_details",
+      "schema": {
+        "properties": {
+          "HtmlBody": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Body": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageStream": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "To": {
+            "items": {
+              "properties": {
+                "Email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Cc": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Bcc": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Recipients": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "ReceivedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "From": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Attachments": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TrackOpens": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "TrackLinks": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Metadata": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Sandboxed": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "MessageEvents": {
+            "items": {
+              "properties": {
+                "Recipient": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "ReceivedAt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Details": {
+                  "properties": {
+                    "DeliveryMessage": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "DestinationServer": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "DestinationIP": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "MessageId"
+            ],
+            "path": "messages/outbound/{}/details",
+            "stream-type": "child",
+            "parent-endpoint": "messages/outbound",
+            "parent-response-key": "Messages"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "HtmlBody"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Body"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStream"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "To"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Cc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Bcc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Recipients"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReceivedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "From"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Attachments"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Status"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TrackOpens"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TrackLinks"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Metadata"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Sandboxed"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageEvents"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Recipient"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Type"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "ReceivedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Details"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "properties",
+            "DeliveryMessage"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "properties",
+            "DestinationServer"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "properties",
+            "DestinationIP"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_opens_emailclients",
+      "group": null,
+      "name": "stats_outbound_opens_emailclients",
+      "stream": "stats_outbound_opens_emailclients",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Clients": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "/stats/outbound/opens/emailclients",
+            "stream-type": "email-clients",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Clients"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "ID"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "inbound_rules",
+      "group": null,
+      "name": "inbound_rules",
+      "stream": "inbound_rules",
+      "schema": {
+        "properties": {
+          "ID": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Rule": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "ID"
+            ],
+            "path": "triggers/inboundrules",
+            "stream-type": "incremental_list",
+            "response-key": "InboundRules"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Rule"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "ID"
+      ],
+      "replication_key": "BouncedAt",
+      "tap_stream_id": "bounce_details",
+      "group": null,
+      "name": "bounce_details",
+      "stream": "bounce_details",
+      "schema": {
+        "properties": {
+          "ID": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TypeCode": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Tag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ServerID": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "MessageStream": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Details": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Email": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "From": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BouncedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "DumpAvailable": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "Inactive": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "CanActivate": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Content": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "ID"
+            ],
+            "path": "bounces/{}",
+            "stream-type": "child",
+            "parent-endpoint": "bounces",
+            "parent-response-key": "Bounces"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Type"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TypeCode"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tag"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageID"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ServerID"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStream"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Description"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Details"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "From"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BouncedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "DumpAvailable"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Inactive"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CanActivate"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Content"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "MessageID"
+      ],
+      "replication_key": "Date",
+      "tap_stream_id": "inbound_messages",
+      "group": null,
+      "name": "inbound_messages",
+      "stream": "inbound_messages",
+      "schema": {
+        "properties": {
+          "From": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "FromName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "FromFull": {
+            "properties": {
+              "Email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "MailboxHash": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "To": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ToFull": {
+            "items": {
+              "properties": {
+                "Email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "MailboxHash": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "CcFull": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Cc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "BccFull": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Bcc": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ReplyTo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "OriginalRecipient": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MailboxHash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Tag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Attachments": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "MessageID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageStream": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "MessageID"
+            ],
+            "path": "messages/inbound",
+            "stream-type": "incremental_list",
+            "response-key": "InboundMessages"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "From"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FromName"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FromFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "MailboxHash"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "To"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ToFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "MailboxHash"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CcFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Cc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BccFull"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Bcc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReplyTo"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "OriginalRecipient"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MailboxHash"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tag"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Attachments"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Status"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStream"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_opens",
+      "group": null,
+      "name": "stats_outbound_opens",
+      "stream": "stats_outbound_opens",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Opens": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Unique": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/opens",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Opens"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Unique"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_bounces",
+      "group": null,
+      "name": "stats_outbound_bounces",
+      "stream": "stats_outbound_bounces",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "HardBounce": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "SoftBounce": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Transient": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "SMTPApiError": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/bounces",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "HardBounce"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SoftBounce"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Transient"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SMTPApiError"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "TemplateId"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "template_details",
+      "group": null,
+      "name": "template_details",
+      "stream": "template_details",
+      "schema": {
+        "properties": {
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TemplateId": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "HtmlBody": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TextBody": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "AssociatedServerId": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Active": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "Alias": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TemplateType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "LayoutTemplate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "TemplateId"
+            ],
+            "path": "templates/{}",
+            "stream-type": "child",
+            "parent-endpoint": "templates",
+            "parent-response-key": "Templates"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TemplateId"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "HtmlBody"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TextBody"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "AssociatedServerId"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Active"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Alias"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TemplateType"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LayoutTemplate"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbound_clicks_browserfamilies",
+      "group": null,
+      "name": "stats_outbound_clicks_browserfamilies",
+      "stream": "stats_outbound_clicks_browserfamilies",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Browsers": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/clicks/browserfamilies",
+            "stream-type": "browser-families",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Browsers"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "MessageID"
+      ],
+      "replication_key": "ReceivedAt",
+      "tap_stream_id": "outbound_messages",
+      "group": null,
+      "name": "outbound_messages",
+      "stream": "outbound_messages",
+      "schema": {
+        "properties": {
+          "Tag": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageStream": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "To": {
+            "items": {
+              "properties": {
+                "Email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Cc": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Bcc": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Recipients": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "ReceivedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "From": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Subject": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Attachments": {
+            "items": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "type": [
+              "array",
+              "null"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TrackOpens": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "TrackLinks": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Metadata": {
+            "properties": {
+              "color": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "client-id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "Sandboxed": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "INCREMENTAL",
+            "table-key-properties": [
+              "MessageID"
+            ],
+            "path": "messages/outbound",
+            "stream-type": "incremental_list",
+            "response-key": "Messages"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tag"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStream"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "To"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Email"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Cc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Bcc"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Recipients"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReceivedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "From"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Subject"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Attachments"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "items",
+            ""
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Status"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TrackOpens"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TrackLinks"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Metadata"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "color"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "client-id"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Sandboxed"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "ID"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "message_streams",
+      "group": null,
+      "name": "message_streams",
+      "stream": "message_streams",
+      "schema": {
+        "properties": {
+          "ID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ServerID": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "MessageStreamType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "CreatedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "UpdatedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ArchivedAt": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ExpectedPurgeDate": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "SubscriptionManagementConfiguration": {
+            "properties": {
+              "UnsubscribeHandlingType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "ID"
+            ],
+            "path": "message-streams",
+            "stream-type": "unpaginated_list",
+            "response-key": "MessageStreams"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ID"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ServerID"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Description"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MessageStreamType"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CreatedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "UpdatedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ArchivedAt"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ExpectedPurgeDate"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SubscriptionManagementConfiguration"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "properties",
+            "UnsubscribeHandlingType"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "Date"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "stats_outbounds_clicks",
+      "group": null,
+      "name": "stats_outbounds_clicks",
+      "stream": "stats_outbounds_clicks",
+      "schema": {
+        "properties": {
+          "Date": {
+            "format": "date-time",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Clicks": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Unique": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "Date"
+            ],
+            "path": "stats/outbound/clicks",
+            "stream-type": "aggregate",
+            "response-key": "Days"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Clicks"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Unique"
+          ],
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "key_properties": [
+        "TemplateId"
+      ],
+      "replication_key": null,
+      "tap_stream_id": "templates",
+      "group": null,
+      "name": "templates",
+      "stream": "templates",
+      "schema": {
+        "properties": {
+          "Active": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "TemplateId": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Alias": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "TemplateType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "LayoutTemplate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "forced-replication-method": "FULL_TABLE",
+            "table-key-properties": [
+              "TemplateId"
+            ],
+            "path": "templates",
+            "stream-type": "full_table_list",
+            "response-key": "Templates"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Active"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TemplateId"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Alias"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TemplateType"
+          ],
+          "metadata": {}
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LayoutTemplate"
+          ],
+          "metadata": {}
+        }
+      ]
+    }
+  ],
+  "_signature": "UGO5qscjk5nI/j+lHcFC7BGUWaVB4p6Uiy1zUyzxvW8/Uxfi7zjMQ/qKsIQJRGMUomdh1vE0BBR5OK2kaTOhBw=="
+}
