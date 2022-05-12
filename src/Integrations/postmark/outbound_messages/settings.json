@@ -1,0 +1,26 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/postmark/0.0.0/table",
+  "columns": [
+    "Tag",
+    "MessageID",
+    "MessageStream",
+    "To",
+    "Cc",
+    "Bcc",
+    "Recipients",
+    "ReceivedAt",
+    "From",
+    "Subject",
+    "Attachments",
+    "Status",
+    "TrackOpens",
+    "TrackLinks",
+    "Metadata",
+    "Sandboxed"
+  ],
+  "import": "outbound_messages",
+  "_datos_write_settings": {
+    "max_flatten_depth": 0,
+    "decimals": false
+  }
+}
