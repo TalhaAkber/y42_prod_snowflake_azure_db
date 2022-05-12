@@ -1,6 +1,6 @@
 {
   "request_id": "220512082451_a4f917b7-39e6-5a95-bfd5-127828a8b881",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "a28f57e7-b3c6-4ac9-909f-bd50d86772a4",
     "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
@@ -93,7 +93,226 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "01a43679-3201-22b2-0000-e9a1001190f6",
-    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/d1952872-9c9a-4876-81b6-2ca260de8772"
+    "storage_file": "azure://v2snowflakedev.blob.core.windows.net/prod-snowflake-container/userUploads/v2/tap-mysql/d1952872-9c9a-4876-81b6-2ca260de8772",
+    "import_finished_at": "2022-05-12T08:25:25.219127+00:00",
+    "row_count": 1,
+    "current_import_row_count": 1,
+    "size_in_bytes": 10240,
+    "columns": [
+      {
+        "field_name": "LONG_ARCHIVE_URL",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TEMPLATE_ID",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "AUTO_TWEET",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "INLINE_CSS",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "TRACK_OPENS",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "USE_CONVERSATION",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "DRAG_AND_DROP",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "TITLE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "LIST_ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TO_NAME",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SEGMENT_TEXT",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SEND_TIME",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "AUTHENTICATE",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "FOLDER_ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "STATUS",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TEST_SIZE",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "TIMEWARP",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "TRACK_TEXT_CLICKS",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "SEGMENT_ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "SUBJECT_LINE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ARCHIVE_URL",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "WINNING_COMBINATION_ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TYPE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "FB_COMMENTS",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "SDC_DELETED_AT",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "AUTO_FOOTER",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "CREATE_TIME",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "WINNER_CRITERIA",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TRACK_GOALS",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "FROM_NAME",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "GOOGLE_ANALYTICS",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "FIVETRAN_DELETED",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "WAIT_TIME",
+        "data_type": "NUMBER",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "SDC_EXTRACTED_AT",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "TRACK_HTML_CLICKS",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "REPLY_TO",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "WINNING_CAMPAIGN_ID",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "CLICKTALE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "FIVETRAN_SYNCED",
+        "data_type": "TIMESTAMP_NTZ",
+        "external_data_type": "TIMESTAMP"
+      },
+      {
+        "field_name": "CONTENT_TYPE",
+        "data_type": "TEXT",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "TRACK_ECOMM_360",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      }
+    ],
+    "table_name": "220512082451_a4f917b7-39e6-5a95-bfd5-127828a8b881",
+    "external_url": "https://gr00444.eu-central-1.snowflakecomputing.com/console#/data/tables/detail?databaseName=PROD_SNOWFLAKE_DB&schemaName=PROD_SNOWFLAKE_SCHEMA&tableName=220512082451_a4f917b7-39e6-5a95-bfd5-127828a8b881"
   },
-  "_signature": "Z2uLB+oCgzMTA4hSxYeOH1LjevoRFnO9kf0xMof7G4ZTAPB0HfwG/7zflmYFaj369AVLawYkZ5uq70DHLIOdDQ=="
+  "finished_at": "2022-05-12T08:25:25.219376+00:00",
+  "_signature": "RyVAY3Mu6EBdDYWP1ZgPJmSDhnKHFmoZ6JnkDdkKvRSSQPQxC2Gn0f/VnQhB7xnNXcE1KeOt0dKawcT3sPjBCg=="
 }
