@@ -1,0 +1,55 @@
+{
+  "request_id": "220512122934_6a6f83e0-29f9-567f-8aa6-d1f4d48e851c",
+  "status": "pending",
+  "request": {
+    "source_credentials": "a28f57e7-b3c6-4ac9-909f-bd50d86772a4",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/source.json"
+    },
+    "table_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/mysql/0.0.0/table",
+      "columns": [
+        "id",
+        "message",
+        "update_started",
+        "update_id",
+        "schema",
+        "table",
+        "start",
+        "done",
+        "rows_updated_or_inserted",
+        "status",
+        "progress",
+        "_fivetran_synced",
+        "sdc_deleted_at",
+        "sdc_extracted_at"
+      ],
+      "import": "tmp_test_data-fivetran_audit"
+    },
+    "created_at": "2022-05-12T12:29:34.605180+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/test_mysql/fivetran_audit",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "02219a32c76f1ac4b6f44648d766c905d8b8b447"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "10",
+      "trial": true
+    }
+  },
+  "created_at": "2022-05-12T12:29:34.605180+00:00",
+  "_signature": "hzox7katjZIAGLtp5YZp5zdbRAig2JE5XIClRxIyrO2o0JcX8Z4DMCM40kKuF7GQwN1N1ZMFbbUiEaSPkl3QDQ=="
+}
