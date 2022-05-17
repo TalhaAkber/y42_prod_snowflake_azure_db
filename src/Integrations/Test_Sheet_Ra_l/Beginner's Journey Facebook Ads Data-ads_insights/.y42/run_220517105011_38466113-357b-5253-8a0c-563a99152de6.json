@@ -1,0 +1,46 @@
+{
+  "request_id": "220517105011_38466113-357b-5253-8a0c-563a99152de6",
+  "status": "pending",
+  "request": {
+    "source_credentials": "f4019953-d7c6-4a8b-a454-ff2560f2c6b1",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/singer-google-sheets/0.0.0/source.json"
+    },
+    "table_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/singer-google-sheets/0.0.0/table",
+      "columns": [
+        "auto_detect"
+      ],
+      "import": "1DdQEQVzvsG3lUvivDEwwO-D3hRAycefJOWso-G0Su1E/ads_insights",
+      "_datos_write_settings": {
+        "max_flatten_depth": 0,
+        "decimals": false
+      }
+    },
+    "created_at": "2022-05-17T10:50:11.332618+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/Test_Sheet_Ra_l/Beginner's Journey Facebook Ads Data-ads_insights",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "509dd49b8b550f8b376c27ebd2accb746dff6d13"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "1",
+      "trial": true
+    }
+  },
+  "created_at": "2022-05-17T10:50:11.332618+00:00",
+  "_signature": "goVj+gTfKTCgZQn8zLd5/9NvNOH4qCadp4yluOaQliOk7EgrUyfL82MtToAQ1bCb5TTlH7Iizow6AYjfLgB1Ag=="
+}
