@@ -1,0 +1,11 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/singer-google-sheets/0.0.0/table",
+  "columns": [
+    "auto_detect"
+  ],
+  "import": "1DdQEQVzvsG3lUvivDEwwO-D3hRAycefJOWso-G0Su1E/ads_insights",
+  "_datos_write_settings": {
+    "max_flatten_depth": 0,
+    "decimals": false
+  }
+}
