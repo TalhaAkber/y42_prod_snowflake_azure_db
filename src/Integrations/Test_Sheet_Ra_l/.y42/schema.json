@@ -1,0 +1,395 @@
+{
+  "streams": [
+    {
+      "group": "Beginner's Journey Facebook Ads Data",
+      "stream": "Beginner's Journey Facebook Ads Data-ads_insights",
+      "table_name": "Beginner's Journey Facebook Ads Data-ads_insights",
+      "tap_stream_id": "1DdQEQVzvsG3lUvivDEwwO-D3hRAycefJOWso-G0Su1E/ads_insights",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "google_beginners",
+      "stream": "google_beginners-Sheet1",
+      "table_name": "google_beginners-Sheet1",
+      "tap_stream_id": "1pg-AkXDlQQJ6zTll6I2ch8Q6j0A4vbTKYQWr1VOUDwI/Sheet1",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Risk Assessment SOC2",
+      "stream": "Risk Assessment SOC2-Risk Register",
+      "table_name": "Risk Assessment SOC2-Risk Register",
+      "tap_stream_id": "1u90kv_WIchrTUEC6Khsn9lHM4QcQM_PceNZ_Cn_q7AI/Risk Register",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Risk Assessment SOC2",
+      "stream": "Risk Assessment SOC2-Field Descriptions",
+      "table_name": "Risk Assessment SOC2-Field Descriptions",
+      "tap_stream_id": "1u90kv_WIchrTUEC6Khsn9lHM4QcQM_PceNZ_Cn_q7AI/Field Descriptions",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Risk Assessment SOC2",
+      "stream": "Risk Assessment SOC2-Score Definition",
+      "table_name": "Risk Assessment SOC2-Score Definition",
+      "tap_stream_id": "1u90kv_WIchrTUEC6Khsn9lHM4QcQM_PceNZ_Cn_q7AI/Score Definition",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "(Internal) Y42 Assessment Workbook and Reporting",
+      "stream": "(Internal) Y42 Assessment Workbook and Reporting-System Scope",
+      "table_name": "(Internal) Y42 Assessment Workbook and Reporting-System Scope",
+      "tap_stream_id": "1fh5EaliuTkQSrl2NTT0KgyPcYyvzBnSJh2moK3MVtcg/System Scope",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "(Internal) Y42 Assessment Workbook and Reporting",
+      "stream": "(Internal) Y42 Assessment Workbook and Reporting-Tools",
+      "table_name": "(Internal) Y42 Assessment Workbook and Reporting-Tools",
+      "tap_stream_id": "1fh5EaliuTkQSrl2NTT0KgyPcYyvzBnSJh2moK3MVtcg/Tools",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "(Internal) Y42 Assessment Workbook and Reporting",
+      "stream": "(Internal) Y42 Assessment Workbook and Reporting-Control Activity",
+      "table_name": "(Internal) Y42 Assessment Workbook and Reporting-Control Activity",
+      "tap_stream_id": "1fh5EaliuTkQSrl2NTT0KgyPcYyvzBnSJh2moK3MVtcg/Control Activity",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "(Internal) Y42 Assessment Workbook and Reporting",
+      "stream": "(Internal) Y42 Assessment Workbook and Reporting-Detailed Observations",
+      "table_name": "(Internal) Y42 Assessment Workbook and Reporting-Detailed Observations",
+      "tap_stream_id": "1fh5EaliuTkQSrl2NTT0KgyPcYyvzBnSJh2moK3MVtcg/Detailed Observations",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "(Internal) Y42 Assessment Workbook and Reporting",
+      "stream": "(Internal) Y42 Assessment Workbook and Reporting-SOC 2 2017",
+      "table_name": "(Internal) Y42 Assessment Workbook and Reporting-SOC 2 2017",
+      "tap_stream_id": "1fh5EaliuTkQSrl2NTT0KgyPcYyvzBnSJh2moK3MVtcg/SOC 2 2017",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "(Internal) Y42 Assessment Workbook and Reporting",
+      "stream": "(Internal) Y42 Assessment Workbook and Reporting-ISO 27001 Anex A",
+      "table_name": "(Internal) Y42 Assessment Workbook and Reporting-ISO 27001 Anex A",
+      "tap_stream_id": "1fh5EaliuTkQSrl2NTT0KgyPcYyvzBnSJh2moK3MVtcg/ISO 27001 Anex A",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Risk Assessment Inspiration - Krista",
+      "stream": "Risk Assessment Inspiration - Krista-Sheet1",
+      "table_name": "Risk Assessment Inspiration - Krista-Sheet1",
+      "tap_stream_id": "1plKSEQflbah_nlibMpgifW855ixr0TCnPvUy26-cmkY/Sheet1",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Risk Assessment Inspiration - Krista",
+      "stream": "Risk Assessment Inspiration - Krista-Sheet2",
+      "table_name": "Risk Assessment Inspiration - Krista-Sheet2",
+      "tap_stream_id": "1plKSEQflbah_nlibMpgifW855ixr0TCnPvUy26-cmkY/Sheet2",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Time budget sprint M8",
+      "stream": "Time budget sprint M8-Sheet1",
+      "table_name": "Time budget sprint M8-Sheet1",
+      "tap_stream_id": "15b4AO6e1mDN1eWIRC30JrZOlDWrvnnoOu0z7CffGn_o/Sheet1",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Time budget sprint M8",
+      "stream": "Time budget sprint M8-Ratios",
+      "table_name": "Time budget sprint M8-Ratios",
+      "tap_stream_id": "15b4AO6e1mDN1eWIRC30JrZOlDWrvnnoOu0z7CffGn_o/Ratios",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Testing sheet",
+      "stream": "Testing sheet-Testing sheet",
+      "table_name": "Testing sheet-Testing sheet",
+      "tap_stream_id": "1D2gSSl6OsgcJUtAgq3JrNgSUbC5KCLGxGr14w0n3wzE/Testing sheet",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "SOC 2 Import",
+      "stream": "SOC 2 Import-Pre-audit",
+      "table_name": "SOC 2 Import-Pre-audit",
+      "tap_stream_id": "1Br_L0RYClB3zD_fpcyQdGErc0ekXEFcT_DCS9g8WXos/Pre-audit",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "SOC 2 ",
+      "stream": "SOC 2 -Pre-audit",
+      "table_name": "SOC 2 -Pre-audit",
+      "tap_stream_id": "1Z4pF5278RJnKtm_0XFwI1aVjtsCUVEhNtsUJ5fOZXEY/Pre-audit",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "SOC 2 ",
+      "stream": "SOC 2 -GANTT",
+      "table_name": "SOC 2 -GANTT",
+      "tap_stream_id": "1Z4pF5278RJnKtm_0XFwI1aVjtsCUVEhNtsUJ5fOZXEY/GANTT",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "SOC 2 ",
+      "stream": "SOC 2 -During audit",
+      "table_name": "SOC 2 -During audit",
+      "tap_stream_id": "1Z4pF5278RJnKtm_0XFwI1aVjtsCUVEhNtsUJ5fOZXEY/During audit",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "SOC 2 ",
+      "stream": "SOC 2 -Support sheet",
+      "table_name": "SOC 2 -Support sheet",
+      "tap_stream_id": "1Z4pF5278RJnKtm_0XFwI1aVjtsCUVEhNtsUJ5fOZXEY/Support sheet",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Shortcuts system",
+      "stream": "Shortcuts system-Sheet1",
+      "table_name": "Shortcuts system-Sheet1",
+      "tap_stream_id": "1ok3QgqbjvUtJKChbZnfxwp3Q-UWrloiTyzfFM4PfgXM/Sheet1",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "CS Calls @ Product",
+      "stream": "CS Calls @ Product-Sheet1",
+      "table_name": "CS Calls @ Product-Sheet1",
+      "tap_stream_id": "1w1mt0zcH4sSS4s4Eb0NPVfNnsJHWc2zvI142hHO-C74/Sheet1",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Integrations",
+      "stream": "Integrations-Sheet1",
+      "table_name": "Integrations-Sheet1",
+      "tap_stream_id": "1dtMoieXH4RxnjBNmVcRyU1HNkd-FlNWl-2VK9GqrMZM/Sheet1",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Copy of Internal Customer Referral",
+      "stream": "Copy of Internal Customer Referral-READ ME",
+      "table_name": "Copy of Internal Customer Referral-READ ME",
+      "tap_stream_id": "1nHt6btg1oJd4I-guvrrR2wnApEDJrn_v5dEGc9Ti4b0/READ ME",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "group": "Copy of Internal Customer Referral",
+      "stream": "Copy of Internal Customer Referral-Refer here!",
+      "table_name": "Copy of Internal Customer Referral-Refer here!",
+      "tap_stream_id": "1nHt6btg1oJd4I-guvrrR2wnApEDJrn_v5dEGc9Ti4b0/Refer here!",
+      "schema": {
+        "properties": {
+          "auto_detect": {
+            "inclusion": "automatic",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ],
+  "_signature": "gzgzmEDud09ieUiywxDRNgrq9a/zLOPaKYT74TQKAs0BvEYIVNdHMp3Jt2+sgCFv1KGkgu/4jAr6ryu6kqAZDw=="
+}
