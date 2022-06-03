@@ -3,9 +3,9 @@
   "columns": [
     "auto_detect"
   ],
-  "import": "1DdQEQVzvsG3lUvivDEwwO-D3hRAycefJOWso-G0Su1E/ads_insights",
+  "import": "1pg-AkXDlQQJ6zTll6I2ch8Q6j0A4vbTKYQWr1VOUDwI/Sheet1",
   "_datos_write_settings": {
-    "max_flatten_depth": 0,
+    "max_flatten_depth": 1,
     "decimals": false
   }
 }
