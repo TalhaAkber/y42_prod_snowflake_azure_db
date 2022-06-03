@@ -1,0 +1,46 @@
+{
+  "request_id": "220603084529_2259dc44-7f98-5baf-9112-51900690f34e",
+  "status": "pending",
+  "request": {
+    "source_credentials": "f4019953-d7c6-4a8b-a454-ff2560f2c6b1",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/singer-google-sheets/0.0.0/source.json"
+    },
+    "table_settings": {
+      "$schema": "https://storage.googleapis.com/y42-prod-json-schema/integrations/singer-google-sheets/0.0.0/table",
+      "columns": [
+        "auto_detect"
+      ],
+      "import": "1pg-AkXDlQQJ6zTll6I2ch8Q6j0A4vbTKYQWr1VOUDwI/Sheet1",
+      "_datos_write_settings": {
+        "max_flatten_depth": 1,
+        "decimals": false
+      }
+    },
+    "created_at": "2022-06-03T08:45:29.538357+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/Test_Sheet_Ra_l/google_beginners-Sheet1",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "9d06a965499adc1aba57fa1ca52362962f56c9eb"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "1",
+      "trial": true
+    }
+  },
+  "created_at": "2022-06-03T08:45:29.538357+00:00",
+  "_signature": "Sr8VcXa7d/ShR/f2RhacEnc8J6MDN66NfK9qGJEDjqXCi4C4HhE/L23DifUTPBHbosLN0HwTi3/KL8YHUcqIDA=="
+}
