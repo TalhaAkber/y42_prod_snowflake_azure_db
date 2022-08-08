@@ -1,0 +1,16 @@
+{
+  "$schema": "https://s.y42.com/integrations/snowflake/0.0.0/table",
+  "columns": [
+    "VARIABLE_CODE",
+    "VARIABLE_CATEGORY",
+    "INDUSTRY_AGGREGATION_NZSIOC",
+    "YEAR",
+    "VARIABLE_NAME",
+    "INDUSTRY_CODE_NZSIOC",
+    "VALUE",
+    "INDUSTRY_CODE_ANZSIC06",
+    "INDUSTRY_NAME_NZSIOC",
+    "UNITS"
+  ],
+  "import": "test_stage_csv"
+}
