@@ -1,0 +1,51 @@
+{
+  "request_id": "220808120515_b859c02e-fa1e-53ee-843e-440c9086b05e",
+  "status": "pending",
+  "request": {
+    "source_credentials": "c8142054-04bf-4195-b1d6-c1580d9239cc",
+    "target_credentials": "225d6395-3362-4f24-85e3-482b81c39666",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/snowflake/0.0.0/source.json"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/snowflake/0.0.0/table",
+      "columns": [
+        "VARIABLE_CODE",
+        "VARIABLE_CATEGORY",
+        "INDUSTRY_AGGREGATION_NZSIOC",
+        "YEAR",
+        "VARIABLE_NAME",
+        "INDUSTRY_CODE_NZSIOC",
+        "VALUE",
+        "INDUSTRY_CODE_ANZSIC06",
+        "INDUSTRY_NAME_NZSIOC",
+        "UNITS"
+      ],
+      "import": "test_stage_csv"
+    },
+    "created_at": "2022-08-08T12:05:15.136540+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/tonisnowflake/test_stage_csv",
+        "id": "2:3fce5aba-f274-451d-aa24-b50e242f7d37",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "TalhaAkber",
+        "repo": "y42_prod_snowflake_azure_db",
+        "commit_sha": "0e05ff57a91f9723056f39c478afaa66893cec5a"
+      }
+    },
+    "context": {
+      "company_id": 2,
+      "company_slug": "y42-demo",
+      "triggered_by_type": "user",
+      "triggered_by_id": "37",
+      "trial": true
+    }
+  },
+  "created_at": "2022-08-08T12:05:15.136540+00:00",
+  "_signature": "uWEqjcE268fsKDMN/orkcWjmthBWROMz5FQcoiofodsdFfp2Vbal5y8TPmXNmKXTxx+IBRgv+WjCj/9JV86pBA=="
+}
